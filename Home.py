@@ -2,8 +2,7 @@ import streamlit as st
 from PIL import Image
 from helpers import get_current_age, get_my_gpa
 
-st.set_page_config(page_title="Mikhail Avrutskii", page_icon="👨‍💻", layout="wide")
-
+st.set_page_config(page_title="Mikhail Avrutskii", page_icon="👨‍💻", layout="wide", initial_sidebar_state="expanded")
 
 my_grades = get_my_gpa()
 my_age = get_current_age()
@@ -25,7 +24,8 @@ with col1:
 with col2:
     # Main
     st.write("# Mikhail Avrutskii")
-    st.write(f"👋 Hi, I'm **Mikhail**, a {my_age}-year-old AI student with a passion for machine learning, teaching, and building useful software.")
+    st.write(
+        f"👋 Hi, I'm **Mikhail**, a {my_age}-year-old AI student with a passion for machine learning, teaching, and building useful software.")
 
     st.markdown("""
 I'm currently pursuing a **B.Sc. in Artificial Intelligence** at the Deggendorf Institute of Technology (Germany), 

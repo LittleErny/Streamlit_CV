@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.set_page_config(page_title="Projects – Mikhail Avrutskii", page_icon="🧠", layout="wide")
+st.set_page_config(page_title="Projects – Mikhail Avrutskii", page_icon="🧠", layout="wide",
+                   initial_sidebar_state="expanded")
 
 st.title("🧠 Projects & Applications")
 st.markdown("""
@@ -61,7 +62,7 @@ Non-functional achievements:
     """)
 
 # --- Machine Learning: Garbage Classification ---
-with st.expander("🗑️ Garbage Classification (2025)", expanded=False):
+with st.expander("♻️ Garbage Image Classification (2025)", expanded=False):
     st.markdown("""
 **2025 Machine Learning – Garbage Classification**  
 **Institution**: Deggendorf Institute of Technology (DIT)  

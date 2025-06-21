@@ -1,7 +1,7 @@
 import streamlit as st
 from helpers import get_my_gpa
 
-st.set_page_config(page_title="CV – Mikhail Avrutskii", page_icon="📄", layout="wide")
+st.set_page_config(page_title="CV – Mikhail Avrutskii", page_icon="📄", layout="wide", initial_sidebar_state="expanded")
 
 st.title("📄 Curriculum Vitae – Mikhail Avrutskii")
 
@@ -21,7 +21,7 @@ st.markdown("---")
 # --- Education ---
 st.subheader("🎓 Education")
 
-col1, col2 = st.columns(2)
+col1, _, col2 = st.columns([7, 1, 7])
 
 col1.markdown("""
 #### **B.Sc. Artificial Intelligence**  
@@ -80,6 +80,8 @@ col2.metric(
          f"  \nRussia: {my_grades['russian_score']} / 5",
 )
 
+st.write(" ")
+
 # --- Experience ---
 st.subheader("💼 Experience")
 
@@ -96,6 +98,8 @@ Remote | *2023 – Present*
 - Taught 4 school students mathematics and computer science
 - Focused on exam preparation and in-depth topic understanding
 """)
+
+st.write(" ")
 
 # --- Skills ---
 st.subheader("💻 Technical Skills")
@@ -143,6 +147,8 @@ with col3:
 - Arduino (C++ / microcontrollers)
     """)
 
+st.write(" ")
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -177,6 +183,8 @@ with col3:
 - Version Control workflows
     """)
 
+st.write(" ")
+
 # --- Soft Skills ---
 st.subheader("🤝 Soft Skills")
 
@@ -192,6 +200,8 @@ st.markdown("""
 - Cross-cultural communication skills
 """)
 
+st.write(" ")
+
 # --- Certifications ---
 st.subheader("📜 Certifications & Trainings")
 
@@ -203,6 +213,8 @@ st.markdown("""
 - **Arduino Club member** (Rostov-on-Don, Russia) 2016-2018
 - Additional online courses in Data Science and Blockchain
 """)
+
+st.write(" ")
 
 # --- Languages ---
 st.subheader("🌍 Languages")
@@ -228,6 +240,8 @@ with col3:
         value="Native",
         help="Native proficiency: Full command of the language, including idiomatic expressions and cultural context.",
     )
+
+st.write(" ")
 
 # --- Hobbies ---
 st.subheader("🎮 Interests and Knowledge")
